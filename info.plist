@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.xiongqi.npm-search</string>
+	<string>com.xiongqi.coder-search</string>
 	<key>connections</key>
 	<dict>
 		<key>ADCCF693-3BBF-498A-9D31-BA052DB7EB31</key>
@@ -46,11 +46,11 @@
 	<key>createdby</key>
 	<string>xiongqi</string>
 	<key>description</key>
-	<string>Search NPM</string>
+	<string>Search NPM &amp; Github</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Npm Search</string>
+	<string>Coder Search</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -256,6 +256,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/Xiongqi-XQ/alfred-coder-search</string>
 </dict>
 </plist>
