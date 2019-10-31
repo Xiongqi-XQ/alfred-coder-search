@@ -40,17 +40,25 @@ if (querys) {
       if (data) {
         const items = []
         data.items.forEach(i => {
-          // console.log(i.description)
-          let { id, full_name, description = 'noDesc', html_url, pushed_at, stargazers_count } = i
+          let { id, full_name, description = 'noDesc', html_url, pushed_at, stargazers_count, language, license } = i
           let item = {
             uid: id,
-            title: full_name,
-            subtitle: description + '  •  ' + '⭐' + stargazers_count,
+            title: full_name + '  ⭐ ' + stargazers_count,
+            subtitle: description || 'noDesc',
             arg: html_url,
             mods: {
               shift: {
-                // arg: 'https://www.npmjs.com/search?q=' + querys,
-                subtitle: 'updated ' + moment(pushed_at).fromNow() + '  •  ' + '⭐ ' + stargazers_count,
+                subtitle:
+                  'updated ' +
+                  moment(pushed_at).fromNow() +
+                  '  •  ' +
+                  (language || '') +
+                  '  •  ' +
+                  ((license && license.spdx_id) || ''),
+              },
+              cmd: {
+                arg: 'https://github.com/search?' + querys_encode,
+                subtitle: "Search Github for '" + querys + "'",
               },
             },
           }
@@ -72,6 +80,6 @@ if (querys) {
       }
     })
   })
-  req.setHeader('User-Agent', 'xiongqi-xq')
+  req.setHeader('User-Agent', 'Xiongqi-XQ')
   req.end()
 }

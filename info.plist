@@ -79,6 +79,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -99,7 +101,7 @@
 				<string>searching......</string>
 				<key>script</key>
 				<string># please use your local node path. eg: ~/.node/bin/node
-~/.node/bin/node npm-search.js $1</string>
+~/.nvm/versions/node/v10.17.0/bin/node npm-search.js $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -118,7 +120,7 @@
 			<key>uid</key>
 			<string>ADCCF693-3BBF-498A-9D31-BA052DB7EB31</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -146,6 +148,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -155,7 +159,7 @@
 				<key>keyword</key>
 				<string>gh</string>
 				<key>queuedelaycustom</key>
-				<integer>3</integer>
+				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
@@ -166,7 +170,7 @@
 				<string>searching......</string>
 				<key>script</key>
 				<string># please use your local node path. eg: ~/.node/bin/node
-~/.node/bin/node github-search.js $1</string>
+~/.nvm/versions/node/v10.17.0/bin/node github-search.js $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -185,7 +189,7 @@
 			<key>uid</key>
 			<string>E25D99CD-A790-45D2-A26A-969B84D25A87</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
